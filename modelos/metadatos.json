@@ -1,0 +1,222 @@
+{
+  "dataset": "Adult / Census Income (UCI Machine Learning Repository, id 2)",
+  "url_dataset": "https://archive.ics.uci.edu/dataset/2/adult",
+  "objetivo": "income (1 = >50K USD/año, 0 = <=50K USD/año)",
+  "clases": {
+    "0": "<=50K",
+    "1": ">50K"
+  },
+  "features": [
+    "age",
+    "workclass",
+    "education",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "capital_gain",
+    "capital_loss",
+    "hours_per_week",
+    "native_country"
+  ],
+  "numericas": [
+    "age",
+    "hours_per_week",
+    "capital_gain",
+    "capital_loss"
+  ],
+  "categoricas": [
+    "workclass",
+    "education",
+    "marital_status",
+    "occupation",
+    "relationship",
+    "race",
+    "sex",
+    "native_country"
+  ],
+  "categorias": {
+    "workclass": [
+      "Federal-gov",
+      "Local-gov",
+      "Never-worked",
+      "Private",
+      "Self-emp-inc",
+      "Self-emp-not-inc",
+      "State-gov",
+      "Without-pay"
+    ],
+    "education": [
+      "10th",
+      "11th",
+      "12th",
+      "1st-4th",
+      "5th-6th",
+      "7th-8th",
+      "9th",
+      "Assoc-acdm",
+      "Assoc-voc",
+      "Bachelors",
+      "Doctorate",
+      "HS-grad",
+      "Masters",
+      "Preschool",
+      "Prof-school",
+      "Some-college"
+    ],
+    "marital_status": [
+      "Divorced",
+      "Married-AF-spouse",
+      "Married-civ-spouse",
+      "Married-spouse-absent",
+      "Never-married",
+      "Separated",
+      "Widowed"
+    ],
+    "occupation": [
+      "Adm-clerical",
+      "Armed-Forces",
+      "Craft-repair",
+      "Exec-managerial",
+      "Farming-fishing",
+      "Handlers-cleaners",
+      "Machine-op-inspct",
+      "Other-service",
+      "Priv-house-serv",
+      "Prof-specialty",
+      "Protective-serv",
+      "Sales",
+      "Tech-support",
+      "Transport-moving"
+    ],
+    "relationship": [
+      "Husband",
+      "Not-in-family",
+      "Other-relative",
+      "Own-child",
+      "Unmarried",
+      "Wife"
+    ],
+    "race": [
+      "Amer-Indian-Eskimo",
+      "Asian-Pac-Islander",
+      "Black",
+      "Other",
+      "White"
+    ],
+    "sex": [
+      "Female",
+      "Male"
+    ],
+    "native_country": [
+      "Cambodia",
+      "Canada",
+      "China",
+      "Columbia",
+      "Cuba",
+      "Dominican-Republic",
+      "Ecuador",
+      "El-Salvador",
+      "England",
+      "France",
+      "Germany",
+      "Greece",
+      "Guatemala",
+      "Haiti",
+      "Holand-Netherlands",
+      "Honduras",
+      "Hong",
+      "Hungary",
+      "India",
+      "Iran",
+      "Ireland",
+      "Italy",
+      "Jamaica",
+      "Japan",
+      "Laos",
+      "Mexico",
+      "Nicaragua",
+      "Outlying-US(Guam-USVI-etc)",
+      "Peru",
+      "Philippines",
+      "Poland",
+      "Portugal",
+      "Puerto-Rico",
+      "Scotland",
+      "South",
+      "Taiwan",
+      "Thailand",
+      "Trinadad&Tobago",
+      "United-States",
+      "Vietnam",
+      "Yugoslavia"
+    ]
+  },
+  "moda": {
+    "workclass": "Private",
+    "education": "HS-grad",
+    "marital_status": "Married-civ-spouse",
+    "occupation": "Prof-specialty",
+    "relationship": "Husband",
+    "race": "White",
+    "sex": "Male",
+    "native_country": "United-States"
+  },
+  "rangos": {
+    "age": {
+      "min": 17,
+      "max": 90,
+      "mediana": 37.0
+    },
+    "hours_per_week": {
+      "min": 1,
+      "max": 99,
+      "mediana": 40.0
+    },
+    "capital_gain": {
+      "min": 0,
+      "max": 99999,
+      "mediana": 0.0
+    },
+    "capital_loss": {
+      "min": 0,
+      "max": 4356,
+      "mediana": 0.0
+    }
+  },
+  "modelos": {
+    "Random Forest": "modelo_random_forest.joblib",
+    "Perceptrón multicapa (MLP)": "modelo_mlp.joblib"
+  },
+  "variaciones_elegidas": {
+    "Random Forest": "RF-A · regularizado",
+    "Perceptrón multicapa (MLP)": "MLP-A · compacta + early stopping"
+  },
+  "metricas_prueba": {
+    "Random Forest": {
+      "Precision (>50K)": 0.7963,
+      "Recall (>50K)": 0.604,
+      "F1 (>50K)": 0.687,
+      "Precision (macro)": 0.8402,
+      "Recall (macro)": 0.7777,
+      "Exactitud": 0.8682,
+      "ROC AUC": 0.9195
+    },
+    "Perceptrón multicapa (MLP)": {
+      "Precision (>50K)": 0.7246,
+      "Recall (>50K)": 0.6353,
+      "F1 (>50K)": 0.677,
+      "Precision (macro)": 0.8071,
+      "Recall (macro)": 0.7796,
+      "Exactitud": 0.8549,
+      "ROC AUC": 0.9097
+    }
+  },
+  "versiones": {
+    "python_sklearn": "1.9.1",
+    "pandas": "3.0.5",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0"
+  }
+}
