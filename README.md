@@ -1,4 +1,4 @@
-# Parcial práctico 1 — Predicción del nivel de ingreso (Adult / Census Income, UCI)
+# Predicción del nivel de ingreso (Adult / Census Income, UCI)
 
 Clasificación binaria: ¿la persona gana **más de 50 000 USD al año**? Dos modelos (Random Forest y Perceptrón multicapa), cada uno con dos variaciones comparadas por validación cruzada, entrenados en Google Colab y servidos con Streamlit solo para inferencia.
 
