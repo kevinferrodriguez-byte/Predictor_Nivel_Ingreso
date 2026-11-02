@@ -57,7 +57,7 @@ Las rutas son relativas: el notebook crea `datos/` y `modelos/` en su carpeta de
 
 La selección se hizo solo con el 80 % de entrenamiento; el 20 % de prueba se reserva para comparar los dos modelos finales. 
 
-### La aplicación
+### 3. La aplicación
 
 Debajo de la portada, se explica qué predice la app, con qué datos y con qué modelos. Flujo guiado en 4 pasos: (1) elegir el modelo en la barra lateral, que incluye una breve introducción → (2) cargar un arquetipo de persona (Andrés, Laura, Carolina, Diego o perfil propio) → (3) ajustar los 12 campos → (4) Predecir. El resultado muestra la clase, la probabilidad, una barra con el umbral de 50 % y el nivel de confianza.
 
