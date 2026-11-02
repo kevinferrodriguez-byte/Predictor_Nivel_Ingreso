@@ -80,8 +80,8 @@ seaborn==0.13.2
 
 ### A. Google Colab 
 
-https://colab.research.google.com/drive/1IFeoUqlld3_K1EIHfb48IyNufghlMQ5h
+Ingresar a: https://colab.research.google.com/drive/1IFeoUqlld3_K1EIHfb48IyNufghlMQ5h
 
 ### B. StreamLit
 
-Ingresar https://predictor-nivel-ingreso.streamlit.app/
+Ingresar a: https://predictor-nivel-ingreso.streamlit.app/
